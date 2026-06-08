@@ -12,8 +12,8 @@
 --green:#0f8f4d;--orange:#b45309;--red:#d92d20;--red-light:#fff1f0;--shadow:0 18px 50px rgba(17,24,39,.08);
 }
 *{box-sizing:border-box;margin:0;padding:0}
-html{background:var(--soft)}
-body{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","PingFang SC","Noto Sans SC","Microsoft YaHei",sans-serif;font-size:15px;color:var(--ink);background:radial-gradient(circle at 50% -10%,#fff 0,#f5f5f7 34%,#eceef2 100%);line-height:1.55;min-height:100vh;letter-spacing:0}
+html{background:var(--soft);font-size:15px}
+body{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","PingFang SC","Noto Sans SC","Microsoft YaHei",sans-serif;font-size:1rem;color:var(--ink);background:radial-gradient(circle at 50% -10%,#fff 0,#f5f5f7 34%,#eceef2 100%);line-height:1.55;min-height:100vh;letter-spacing:0}
 button,input{font:inherit}
 button{-webkit-tap-highlight-color:transparent}
 
@@ -24,7 +24,7 @@ button{-webkit-tap-highlight-color:transparent}
 .login-header p{color:var(--muted);font-size:.9rem;font-weight:400}
 .login-tabs-wrap{padding:0 18px;position:relative;z-index:2}
 .login-tabs{display:flex;padding:4px;background:rgba(17,24,39,.06);border-radius:14px;gap:4px}
-.login-tab{flex:1;min-height:40px;padding:9px 8px;text-align:center;font-size:13px;font-weight:650;cursor:pointer;border:none;background:transparent;color:#6b7280;border-radius:11px;transition:background .18s,color .18s,box-shadow .18s}
+.login-tab{flex:1;min-height:40px;padding:9px 8px;text-align:center;font-size:.867rem;font-weight:650;cursor:pointer;border:none;background:transparent;color:#6b7280;border-radius:11px;transition:background .18s,color .18s,box-shadow .18s}
 .login-tab.active{background:rgba(255,255,255,.92);color:var(--ink);box-shadow:0 6px 18px rgba(15,23,42,.08)}
 .login-body{padding:22px 28px 30px}
 .login-body input{width:100%;height:48px;margin:7px 0;border:1px solid rgba(17,24,39,.12);border-radius:14px;padding:0 14px;font-size:.95rem;background:rgba(255,255,255,.82);transition:border-color .18s,box-shadow .18s,background .18s;color:var(--ink)}
@@ -52,27 +52,27 @@ main{max-width:920px;margin:0 auto;padding:16px 14px 76px}
 
 .metrics-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(118px,1fr));gap:10px;margin:12px 0}
 .metric-box{background:rgba(255,255,255,.74);border-radius:18px;padding:15px 12px;text-align:left;border:1px solid rgba(17,24,39,.08)}
-.metric-box .num{font-size:24px;font-weight:780;color:var(--ink);font-family:inherit;line-height:1.15}
-.metric-box .label{font-size:12px;color:var(--muted);margin-top:6px}
+.metric-box .num{font-size:1.6rem;font-weight:780;color:var(--ink);font-family:inherit;line-height:1.15}
+.metric-box .label{font-size:.8rem;color:var(--muted);margin-top:6px}
 
 .tier-card{background:rgba(255,255,255,.78);border-radius:20px;padding:0;margin:16px 0;box-shadow:0 10px 32px rgba(17,24,39,.07);border:1px solid rgba(17,24,39,.08);overflow:hidden}
 .tier-header{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:15px 18px}
 .tier-header.qian20{background:#edf9f1;color:#126b3a;border-bottom:1px solid #cdebd8}
 .tier-header.critical{background:#fff7e6;color:#8a4b05;border-bottom:1px solid #f5dfae}
 .tier-header.hou20{background:#fff0ee;color:#a52318;border-bottom:1px solid #ffd0cb}
-.tier-header h3{font-size:15px;font-weight:750;margin:0;line-height:1.35}
-.tier-header .meta{font-size:12px;opacity:.86;white-space:nowrap}
+.tier-header h3{font-size:1rem;font-weight:750;margin:0;line-height:1.35}
+.tier-header .meta{font-size:.8rem;opacity:.86;white-space:nowrap}
 .tier-body{padding:14px 16px}
 
 .subj-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;padding:0 16px 14px}
 .subj-item{background:rgba(255,255,255,.78);border-radius:14px;padding:11px 8px;text-align:center;border:1px solid rgba(17,24,39,.08)}
-.subj-item .name{font-size:12px;color:var(--muted);margin-bottom:4px}
-.subj-item .avg{font-size:15px;font-weight:760;color:var(--ink)}
-.subj-item .limit{font-size:11px;color:var(--red);margin-top:2px}
+.subj-item .name{font-size:.8rem;color:var(--muted);margin-bottom:4px}
+.subj-item .avg{font-size:1rem;font-weight:760;color:var(--ink)}
+.subj-item .limit{font-size:.733rem;color:var(--red);margin-top:2px}
 
 .tbl-wrap{background:#fff;border-radius:16px;overflow:auto;box-shadow:inset 0 0 0 1px rgba(17,24,39,.06);margin:12px 0;-webkit-overflow-scrolling:touch}
-table{width:100%;min-width:620px;border-collapse:separate;border-spacing:0;font-size:13px}
-th{position:sticky;top:0;background:#f7f7f9;color:#374151;padding:11px 8px;text-align:center;font-weight:720;font-size:12px;letter-spacing:0;border-bottom:1px solid rgba(17,24,39,.08);z-index:2}
+table{width:100%;min-width:620px;border-collapse:separate;border-spacing:0;font-size:.867rem}
+th{position:sticky;top:0;background:#f7f7f9;color:#374151;padding:11px 8px;text-align:center;font-weight:720;font-size:.8rem;letter-spacing:0;border-bottom:1px solid rgba(17,24,39,.08);z-index:2}
 td{padding:10px 8px;text-align:center;border-bottom:1px solid rgba(17,24,39,.06);background:#fff}
 tr:hover td{background:#fafafa}
 td.bad{color:var(--red);font-weight:700}
@@ -80,7 +80,7 @@ td.good{color:var(--green);font-weight:700}
 td.warn{color:var(--orange);font-weight:700}
 td.sticky{position:sticky;left:0;background:#fff;font-weight:750;color:var(--ink);z-index:1;box-shadow:8px 0 18px rgba(255,255,255,.92)}
 tr:hover td.sticky{background:#fafafa}
-.weak-tag,.subj-tag{display:inline-flex;align-items:center;background:var(--red-light);color:var(--red);border-radius:999px;padding:3px 8px;font-size:11px;font-weight:700;margin:2px;border:1px solid rgba(217,45,32,.12)}
+.weak-tag,.subj-tag{display:inline-flex;align-items:center;background:var(--red-light);color:var(--red);border-radius:999px;padding:3px 8px;font-size:.733rem;font-weight:700;margin:2px;border:1px solid rgba(217,45,32,.12)}
 
 .zf-card{border:1px solid rgba(17,24,39,.08);border-radius:18px;padding:14px;margin:8px 0;background:rgba(255,255,255,.78)}
 .zf-card .top{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:8px}
@@ -93,13 +93,13 @@ tr:hover td.sticky{background:#fafafa}
 .empty{text-align:center;padding:30px;color:var(--muted)}
 .empty b{display:block;font-size:2rem;margin-bottom:8px}
 @media(max-width:600px){
-body{font-size:14px}
+html{font-size:14px}
 .login-wrap{padding:18px}
 .login-card{border-radius:24px}
 .login-header{padding:28px 22px 18px}
 .login-header h1{font-size:1.28rem}
 .login-tabs-wrap{padding:0 14px}
-.login-tab{font-size:12px;padding:8px 4px}
+.login-tab{font-size:.857rem;padding:8px 4px}
 .login-body{padding:18px 22px 24px}
 .top-bar{padding:22px 16px 16px}
 .top-bar h1{font-size:1.22rem}
@@ -151,7 +151,7 @@ document.getElementById("dashTags").innerHTML="<span>教师个人</span><span>�
 var cards=rec.assignments.map(function(r){return'<article class="zf-card"><div class="top"><b>'+r["班级"]+" · "+r["学科"]+'</b><span class="'+clsFor(r["动态判断"])+'">'+r["动态判断"]+"</span></div>"+spark([r["2025-1期中_Z分"],r["2025-1期末_Z分"],r["2025-2期中_Z分"]])+'<p class="note">'+(r["判断依据"]||"")+"</p></article>";}).join("");
 var h='<div class="card"><h2>教师总览</h2><div class="metrics-grid">'+
 '<div class="metric-box"><div class="num">'+s["任教组合数"]+'</div><div class="label">任教班级</div></div>'+
-'<div class="metric-box"><div class="num" style="font-size:16px">'+s["综合判断"]+'</div><div class="label">综合判断</div></div>'+
+'<div class="metric-box"><div class="num" style="font-size:1.067rem">'+s["综合判断"]+'</div><div class="label">综合判断</div></div>'+
 '<div class="metric-box"><div class="num">'+fmt(s["平均Z分变化"])+'</div><div class="label">平均Z分变化</div></div>'+
 '<div class="metric-box"><div class="num">'+fmt(s["平均均差变化"])+'</div><div class="label">平均均差变化</div></div>'+
 '<div class="metric-box"><div class="num">'+s["明显进步数"]+'</div><div class="label">明显进步数</div></div>'+
@@ -173,7 +173,7 @@ var to=["前20%","前20%临界"],tc={"前20%":"qian20","前20%临界":"critical"
 h+='<div class="card"><h2>任教班级薄弱学科明细</h2><p class="hint">共 <b>'+tw.students+"</b> 名学生 · <b>"+tw.total+"</b> 个薄弱标记（仅前20%+前20%临界）</p>";
 Object.keys(g).sort().forEach(function(cls){
 var ci=wa.class_data[cls]||{};
-h+='<div class="tier-card"><h3 style="font-size:17px;color:var(--ink);margin:0;padding:16px 20px 0">'+cls+"班</h3>";
+h+='<div class="tier-card"><h3 style="font-size:1.133rem;color:var(--ink);margin:0;padding:16px 20px 0">'+cls+"班</h3>";
 to.forEach(function(tier){
 if(!g[cls][tier])return;
 var items=g[cls][tier];
@@ -186,7 +186,7 @@ li='<div class="subj-grid">'+SUBJS.map(function(s){return'<div class="subj-item"
 var byStu={};
 items.forEach(function(w){if(!byStu[w["姓名"]])byStu[w["姓名"]]={name:w["姓名"],total:w["总分"],weak:[]};byStu[w["姓名"]].weak.push({s:w["薄弱学科"],sc:w["该科分数"],ll:w["该科下限分"]});});
 var stuArr=[];for(var k in byStu)stuArr.push(byStu[k]);
-h+='<div class="tier-header '+tc[tier]+'"><h3>'+tier+' <span style="font-size:13px;font-weight:400">('+stuArr.length+"人 · "+items.length+"标记)</span></h3></div>"+li;
+h+='<div class="tier-header '+tc[tier]+'"><h3>'+tier+' <span style="font-size:.867rem;font-weight:400">('+stuArr.length+"人 · "+items.length+"标记)</span></h3></div>"+li;
 h+='<div class="tier-body"><div class="tbl-wrap"><table class="stu-table"><thead><tr><th>姓名</th><th>总分</th><th>薄弱学科</th></tr></thead><tbody>';
 stuArr.forEach(function(s){
 var tags=s.weak.map(function(w){return'<span class="weak-tag">'+w.s+" <b>"+w.sc+'</b>/<small>'+w.ll+"</small></span>";}).join(" ");
@@ -220,7 +220,7 @@ var tc={"前20%":"qian20","前20%临界":"critical","后20%":"hou20"};
 var td=cd.tiers[tier];if(td.count===0)return;
 var noLL=gs&&gs[tier]&&gs[tier].no_lower_limit;
 var ll=noLL?{}:(gs&&gs[tier]?gs[tier].lower_limit:{});
-h+='<div class="tier-card"><div class="tier-header '+tc[tier]+'"><h3>'+tier+"层次 <span style=\"font-size:13px;font-weight:400\">("+td.count+"人)</span></h3>";
+h+='<div class="tier-card"><div class="tier-header '+tc[tier]+'"><h3>'+tier+"层次 <span style=\"font-size:.867rem;font-weight:400\">("+td.count+"人)</span></h3>";
 if(gs&&gs[tier]&&!noLL)h+='<span class="meta">组均分 '+gs[tier].total_avg+" / 下限 "+gs[tier].total_lower+"</span>";
 else if(gs&&gs[tier])h+='<span class="meta">组均分 '+gs[tier].total_avg+"</span>";
 h+="</div>";
